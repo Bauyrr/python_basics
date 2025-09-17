@@ -100,4 +100,168 @@
 # 2. Выбрать, какие изменения оставить
 # 3. git add main.py
 # 4. git commit -m "Resolved merge conflict"
-print('hello world')
+
+
+"""
+============================
+Лабораторная работа: Git + Python
+============================
+
+Раздел 1: Git (по GitHowTo)
+
+1. Создание репозитория
+# git init
+
+2. Добавление файлов в индекс
+# git add <file>
+
+3. Создание коммита
+# git commit -m "Сообщение коммита"
+
+4. Проверка статуса репозитория
+# git status
+
+5. Просмотр истории коммитов
+# git log
+
+6. Просмотр различий
+# git diff
+
+7. Работа с ветками
+# git branch <branch-name>
+
+8. Переключение между ветками
+# git checkout <branch-name>
+
+9. Слияние веток
+# git merge <branch-name>
+
+10. Работа с удалёнными репозиториями
+# git remote add origin <url>
+
+11. Отправка изменений в удалённый репозиторий
+# git push origin <branch-name>
+
+12. Получение изменений из удалённого репозитория
+# git pull origin <branch-name>
+
+13. Клонирование удалённого репозитория
+# git clone <url>
+
+
+============================
+Раздел 2: Python (W3Schools, HOME → Python Strings)
+============================
+
+1. Hello World
+# print("Hello, World!")
+
+2. Variables
+# x = 5
+# y = "John"
+# print(x)
+# print(y)
+
+3. Data Types
+# x = 5
+# y = "John"
+# print(type(x))
+# print(type(y))
+
+4. Numbers
+# x = 5
+# y = 2.5
+# print(type(x))
+# print(type(y))
+
+5. Casting
+# x = 5.5
+# y = int(x)
+# print(y)
+
+6. Strings
+# x = "Hello"
+# y = 'World'
+# print(x + " " + y)
+
+7. Booleans
+# x = True
+# y = False
+# print(type(x))
+# print(type(y))
+
+8. Operators
+# x = 5
+# y = 2
+# print(x + y)
+# print(x - y)
+# print(x * y)
+# print(x / y)
+
+9. Lists
+# fruits = ["apple", "banana", "cherry"]
+# print(fruits[0])
+
+10. Tuples
+# fruits = ("apple", "banana", "cherry")
+# print(fruits[0])
+
+11. Sets
+# fruits = {"apple", "banana", "cherry"}
+# print("banana" in fruits)
+
+12. Dictionaries
+# person = {"name": "John", "age": 36}
+# print(person["name"])
+
+13. If...Else
+# x = 20
+# if x > 18:
+#     print("Adult")
+# else:
+#     print("Not an adult")
+
+14. While Loops
+# i = 1
+# while i < 6:
+#     print(i)
+#     i += 1
+
+15. For Loops
+# for x in range(6):
+#     print(x)
+
+16. Functions
+# def my_function():
+#     print("Hello from a function")
+# my_function()
+
+17. Lambda Functions
+# x = lambda a, b: a + b
+# print(x(5, 3))
+
+18. Arrays
+# import array
+# x = array.array('i', [1, 2, 3])
+# print(x[1])
+
+19. Classes
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# p1 = Person("John", 36)
+# print(p1.name)
+# print(p1.age)
+
+20. String Methods
+# txt = "Hello, World!"
+# print(txt.lower())
+# print(txt.upper())
+# print(txt.strip())
+
+21. String Formatting
+# age = 36
+# txt = "My name is John, and I am {}"
+# print(txt.format(age))
+"""

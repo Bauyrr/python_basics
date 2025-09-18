@@ -210,10 +210,6 @@
 # fruits = {"apple", "banana", "cherry"}
 # print("banana" in fruits)
 
-12. Dictionaries
-# person = {"name": "John", "age": 36}
-# print(person["name"])
-
 13. If...Else
 # x = 20
 # if x > 18:
@@ -221,49 +217,6 @@
 # else:
 #     print("Not an adult")
 
-14. While Loops
-# i = 1
-# while i < 6:
-#     print(i)
-#     i += 1
-
-15. For Loops
-# for x in range(6):
-#     print(x)
-
-16. Functions
-# def my_function():
-#     print("Hello from a function")
-# my_function()
-
-17. Lambda Functions
-# x = lambda a, b: a + b
-# print(x(5, 3))
-
-18. Arrays
-# import array
-# x = array.array('i', [1, 2, 3])
-# print(x[1])
-
-19. Classes
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-# p1 = Person("John", 36)
-# print(p1.name)
-# print(p1.age)
-
-20. String Methods
-# txt = "Hello, World!"
-# print(txt.lower())
-# print(txt.upper())
-# print(txt.strip())
-
-21. String Formatting
-# age = 36
-# txt = "My name is John, and I am {}"
-# print(txt.format(age))
 """
 
 

@@ -1,3 +1,196 @@
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
+# print(10 > 9)
+# print(10 == 9)
+# print(10 < 9)
+
+
+# a = 200
+# b = 33
+
+# if b > a:
+#   print("b is greater than a")
+# else:
+#   print("b is not greater than a")
+    
+
+# print(bool("Hello"))
+# print(bool(15))
+
+
+
+
+# x = 'hello'
+# y = 15
+
+# print(bool(x))
+# print(bool(y))
+
+
+
+
+# bool("abc")
+# bool(123)
+# bool(["apple", "cherry", "banana"])
+
+
+
+
+
+# bool(False)
+# bool(None)
+# bool(0)
+# bool("")
+# bool(())
+# bool([])
+# bool({})
+
+
+
+# One more value, or object in this case, evaluates to False, and that is if you 
+# have an object that is made from a class with a __len__ function that returns 0 or False:
+
+# class myclass():
+#     def __len__(self):
+#         return 0
+
+# myobj = myclass()
+# print(bool(myobj))
+
+
+
+# def myFunction() :
+#   return True
+
+# print(myFunction())
+
+
+# def myFunction() :
+#   return True
+
+# if myFunction():
+#   print("YES!")
+# else:
+#   print("NO!")
+
+
+# x = 200
+# print(isinstance(x, int))
+
+
+
+
+
+
+
+# operators like + - * / % ** //
+# print(5 + 4 - 7 + 3)
+
+
+
+# list 
+# thislist = ["apple", "banana", "cherry"]
+# print(thislist)
+
+
+
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist[-4:-1])
+
+
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+# print(thislist)
+
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.insert(1, "orange")
+# print(thislist)
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
+# print(thislist)
+
+
+
+# thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+# thislist.remove("banana")
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.pop(1)
+# print(thislist)
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# del thislist
+# print(thislist)
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.clear()
+# print(thislist)
+
+
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict["brand"])
+
+
+
+
+# a = 200
+# b = 33
+# if b > a:
+#   print("b is greater than a")
+# elif a == b:
+#   print("a and b are equal")
+# else:
+#   print("a is greater than b")
+  
+  
+  
+# i = 1
+# while i < 6:
+#     print(i)
+#     i += 1
+# else:
+#     print("i is no longer less than 6")
+    
+    
+    
+# for x in range(2, 30):
+#   print(x)
+  
+  
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#     if x == "banana":
+#         continue
+#     print(x)
+    
+    
+    
+for x in range(6):
+    if x == 7: break
+    print(x)
+else:
+  print("Finally finished!")

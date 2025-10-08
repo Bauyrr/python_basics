@@ -3,28 +3,6 @@ import math
 import random
 
 
-
-# ex1
-
-# class StringKeeper:
-#     def __init__(self):
-#         self.s = ""
-
-#     def getString(self):
-
-#         self.s = input("Введите строку: ")
-
-#     def printString(self):
-
-#         print(self.s.upper())
-
-# if __name__ == "__main__":
-#     sk = StringKeeper()
-#     sk.getString()
-#     sk.printString()
-    
-    
-    
     
 # EX2
 
@@ -207,23 +185,23 @@ import random
 
 
 #EX9
-# def solve(numheads, numlegs):
-#     for chickens in range(numheads + 1):
-#         rabbits = numheads - chickens
-#         if 2 * chickens + 4 * rabbits == numlegs:
-#             return chickens, rabbits
-#     return None, None
+def solve(numheads, numlegs):
+    for chickens in range(numheads + 1):
+        rabbits = numheads - chickens
+        if 2 * chickens + 4 * rabbits == numlegs:
+            return chickens, rabbits
+    return None, None
 
 
-# if __name__ == "__main__":
-#     heads = int(input("Введите количество голов: "))
-#     legs = int(input("Введите количество ног: "))
+if __name__ == "__main__":
+    heads = int(input("Введите количество голов: "))
+    legs = int(input("Введите количество ног: "))
 
-#     chickens, rabbits = solve(heads, legs)
-#     if chickens is not None:
-#         print(f"Курицы: {chickens}, Кролики: {rabbits}")
-#     else:
-#         print("Решения нет!")
+    chickens, rabbits = solve(heads, legs)
+    if chickens is not None:
+        print(f"Курицы: {chickens}, Кролики: {rabbits}")
+    else:
+        print("Решения нет!")
 
 
 
@@ -379,71 +357,74 @@ import random
 
 # 20.
 # main.py
-from movies import (
-    movies,
-    is_high_score,
-    high_score_movies,
-    movies_by_category,
-    average_score,
-    average_score_by_category,
-)
+# from movies import (
+#     movies,
+#     is_high_score,
+#     high_score_movies,
+#     movies_by_category,
+#     average_score,
+#     average_score_by_category,
+# )
 
-def print_movies_list(m_list):
-    for i, m in enumerate(m_list):
-        print(f"{i}: {m['name']} (IMDB {m['imdb']}, {m['category']})")
+# def print_movies_list(m_list):
+#     for i, m in enumerate(m_list):
+#         print(f"{i}: {m['name']} (IMDB {m['imdb']}, {m['category']})")
 
-def menu():
-    print("\nВыбери действие:")
-    print("1 - Проверить один фильм по индексу (is_high_score)")
-    print("2 - Список фильмов с imdb > порог")
-    print("3 - Фильмы по категории")
-    print("4 - Средний рейтинг всех фильмов")
-    print("5 - Средний рейтинг по категории")
-    print("0 - Выход")
+# def menu():
+#     print("\nВыбери действие:")
+#     print("1 - Проверить один фильм по индексу (is_high_score)")
+#     print("2 - Список фильмов с imdb > порог")
+#     print("3 - Фильмы по категории")
+#     print("4 - Средний рейтинг всех фильмов")
+#     print("5 - Средний рейтинг по категории")
+#     print("0 - Выход")
 
-if __name__ == "__main__":
-    while True:
-        menu()
-        choice = input("Введите номер: ").strip()
-        if choice == "0":
-            break
+# if __name__ == "__main__":
+#     while True:
+#         menu()
+#         choice = input("Введите номер: ").strip()
+#         if choice == "0":
+#             break
 
-        if choice == "1":
-            print("\nСписок фильмов (индекс : название):")
-            print_movies_list(movies)
-            idx = int(input("Введите индекс фильма: "))
-            movie = movies[idx]
-            thresh = input("Порог imdb (Enter = 5.5): ").strip()
-            thresh = float(thresh) if thresh else 5.5
-            print(f"Фильм '{movie['name']}' имеет IMDB {movie['imdb']}. > {thresh}? {is_high_score(movie, thresh)}")
+#         if choice == "1":
+#             print("\nСписок фильмов (индекс : название):")
+#             print_movies_list(movies)
+#             idx = int(input("Введите индекс фильма: "))
+#             movie = movies[idx]
+#             thresh = input("Порог imdb (Enter = 5.5): ").strip()
+#             thresh = float(thresh) if thresh else 5.5
+#             print(f"Фильм '{movie['name']}' имеет IMDB {movie['imdb']}. > {thresh}? {is_high_score(movie, thresh)}")
 
-        elif choice == "2":
-            thresh = input("Порог imdb (Enter = 5.5): ").strip()
-            thresh = float(thresh) if thresh else 5.5
-            res = high_score_movies(movies, thresh)
-            print(f"\nФильмы с IMDB > {thresh}:")
-            print_movies_list(res)
+#         elif choice == "2":
+#             thresh = input("Порог imdb (Enter = 5.5): ").strip()
+#             thresh = float(thresh) if thresh else 5.5
+#             res = high_score_movies(movies, thresh)
+#             print(f"\nФильмы с IMDB > {thresh}:")
+#             print_movies_list(res)
 
-        elif choice == "3":
-            cat = input("Введите название категории (например Romance): ").strip()
-            res = movies_by_category(movies, cat)
-            if res:
-                print(f"\nФильмы в категории '{cat}':")
-                print_movies_list(res)
-            else:
-                print("Фильмов в этой категории не найдено.")
+#         elif choice == "3":
+#             cat = input("Введите название категории (например Romance): ").strip()
+#             res = movies_by_category(movies, cat)
+#             if res:
+#                 print(f"\nФильмы в категории '{cat}':")
+#                 print_movies_list(res)
+#             else:
+#                 print("Фильмов в этой категории не найдено.")
 
-        elif choice == "4":
-            avg = average_score(movies)
-            print(f"\nСредний IMDB по всем фильмам: {avg:.2f}")
+#         elif choice == "4":
+#             avg = average_score(movies)
+#             print(f"\nСредний IMDB по всем фильмам: {avg:.2f}")
 
-        elif choice == "5":
-            cat = input("Введите категорию для среднего рейтинга: ").strip()
-            avg = average_score_by_category(movies, cat)
-            if avg == 0:
-                print("Фильмов в этой категории не найдено или средний = 0.")
-            else:
-                print(f"Средний IMDB в категории '{cat}': {avg:.2f}")
+#         elif choice == "5":
+#             cat = input("Введите категорию для среднего рейтинга: ").strip()
+#             avg = average_score_by_category(movies, cat)
+#             if avg == 0:
+#                 print("Фильмов в этой категории не найдено или средний = 0.")
+#             else:
+#                 print(f"Средний IMDB в категории '{cat}': {avg:.2f}")
 
-        else:
-            print("Неверный ввод, попробуй снова.")
+#         else:
+#             print("Неверный ввод, попробуй снова.")
+
+
+    

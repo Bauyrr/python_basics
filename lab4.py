@@ -1,5 +1,8 @@
 import datetime
 import math 
+import json
+
+
 # ex1
 
 # def kvadraty(n):
@@ -99,23 +102,23 @@ import math
 # print(s)
 
 
-import json
 
 # Открываем и читаем JSON-файл
-with open("sample-data.json", "r") as file:
-    data = json.load(file)
+# with open("sample-data.json", "r") as file:
+#     data = json.load(file)
 
-# Заголовок таблицы
-print("Interface Status")
-print("=" * 80)
-print("DN                                                 Description           Speed    MTU  ")
-print("-" * 80)
+# # Заголовок таблицы
+# print("Interface Status")
+# print("=" * 80)
+# print("DN                                                 Description           Speed    MTU  ")
+# print("-" * 80)
 
-# Проходимся по каждому элементу
-for item in data["imdata"]:
-    dn = item["l1PhysIf"]["attributes"]["dn"]
-    descr = item["l1PhysIf"]["attributes"]["descr"]
-    speed = item["l1PhysIf"]["attributes"]["speed"]
-    mtu = item["l1PhysIf"]["attributes"]["mtu"]
+# # Проходимся по каждому элементу
+# for item in data["imdata"]:
+#     dn = item["l1PhysIf"]["attributes"]["dn"]
+#     descr = item["l1PhysIf"]["attributes"]["descr"]
+#     speed = item["l1PhysIf"]["attributes"]["speed"]
+#     mtu = item["l1PhysIf"]["attributes"]["mtu"]
 
-    print(f"{dn:50} {descr:20} {speed:8} {mtu:6}")
+#     print(f"{dn:50} {descr:20} {speed:8} {mtu:6}")
+

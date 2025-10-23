@@ -7,48 +7,41 @@
 # print(xx(numbers))
 
 
-# def uplow (list):
-#     low = 0
-#     up = 0
-#     for word in list:
-#         for letter in word:
-#             if letter.isupper():
-#                 up += 1
-#             else:
-#                 low += 1
-#     print (f'upper letters: {up}')
-#     print (f'lower letters: {low}')
-    
-# list = list(input("ввод: ").split())
-# uplow(list)
-
-
+def uplow (tex):
+    low = 0
+    up = 0
+    for i in tex:
+        if i.isupper():
+            up+=1
+        else:
+            low+=1
+    return up,low
+tex=input('')
+up,low = uplow(tex)
+print(up,low)
 
 
 # def polindrome(n):
 #     if n == n[::-1]:
-#         print("Yes")
+#         print("да")
 #     else:
-#         print("No")
+#         print("нет")
 # n = input("ввод: ")
 # polindrome(n)
 
 
 
 
-# import math, time
+import math, time
 
-# def fun(x, delay):
-#     time.sleep(delay/1000)
-#     return math.sqrt(x)
-# print("Sample Input: ")
-# x = int(input())
-# delay = int(input())
+def fun(x, y):
+    time.sleep(y/1000)
+    return math.sqrt(x)
+print("Sample Input: ")
+x = int(input())
+y = int(input())
 
-# print("Sample output:\nSquare root of ",x," after ",delay," miliseconds is ",{fun(x, delay)})
+print(f"Sample output:\nSquare root of ",x," after ",delay," miliseconds is ",{fun(x, y)})
 
-# def istrue (tuple):
-#     return all(tuple)
-# tup = input(" ").split()
-# print(istrue(tup))
+
 

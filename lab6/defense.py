@@ -1,7 +1,6 @@
 def inst(text):
     a = 0
     b = 0
-
     for i in text:
         if i.isdigit():     
             a += 1
